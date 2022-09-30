@@ -11,7 +11,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/lodging" element={<Lodging />} />
+        <Route path="/lodging/" element={<Lodging />} />
         <Route path="/about" element={<About />} />
         {/* path = "*" is for all other url adresses that non exist */}
         <Route path="*" element={<Error404 />} />
