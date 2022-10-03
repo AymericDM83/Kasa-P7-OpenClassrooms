@@ -20,7 +20,7 @@ const Home = () => {
       <Banner />
       <div className="card_container">
         {data.map((lodging, index) => (
-          <NavLink key={index}>
+          <NavLink key={index} to={`/lodging/${lodging.id}`}>
             <Card key={index} lodging={lodging} />
           </NavLink>
         ))}

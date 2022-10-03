@@ -49,7 +49,13 @@
 
 // -------------------  Responsive ----------------------
 
-// --- Breakpoint laptops 992px ---
+@media (max-width: 1280px) {
+    .banner_container {
+        height: 180px;
+    }
+}
+
+// --- Breakpoint 992px ---
 @media (max-width: 992px) {
     .banner_container {
         height: 180px;
@@ -70,7 +76,7 @@
     }
 }
 
-// --- Breakpoint tablette 768px ---
+// --- Breakpoint 768px ---
 @media (max-width: 768px) {
     .banner_container {
         height: 150px;
@@ -91,7 +97,7 @@
     }
 }
 
-// --- Breakpoint mobile 576px ---
+// --- Breakpoint 576px ---
 @media (max-width: 576px) {
     .banner_container {
         height: 110px;
