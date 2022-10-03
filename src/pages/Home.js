@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useContext } from "react";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Header from "../components/Header";
 import { NavLink } from "react-router-dom";
+import { AppContext } from "../AppContext";
 
 const Home = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios.get("logements.json").then((res) => {
-      setData(res.data);
-    });
-  }, []);
+  const data = useContext(AppContext);
 
   return (
     <div>

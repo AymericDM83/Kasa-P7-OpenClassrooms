@@ -3,6 +3,10 @@
     height: 200px;
     margin: 30px 60px;
     @include flexCenter;
+    -webkit-animation: SHOW-BOX 2s ease;
+    -moz-animation: SHOW-BOX 2s ease;
+    -o-animation: SHOW-BOX 2s ease;
+    animation: slide-in-elliptic-left-fwd 2s ease;
     &::before {
         content:"";
         position: absolute;
@@ -29,6 +33,10 @@
     height: 200px;
     margin: 30px 60px;
     @include flexCenter;
+    -webkit-animation: SHOW-BOX 2s ease;
+    -moz-animation: SHOW-BOX 2s ease;
+    -o-animation: SHOW-BOX 2s ease;
+    animation: SHOW-BOX 2s ease;
     &::before {
         content:"";
         position: absolute;

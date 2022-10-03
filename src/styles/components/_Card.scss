@@ -7,13 +7,18 @@
     align-items: center;
     flex-flow: row wrap;
     border-radius: 25px;
-}
+    -webkit-animation: SHOW-BOX 2s ease-in-out;
+    -moz-animation: SHOW-BOX 2s ease-in-out;
+    -o-animation: SHOW-BOX 2s ease-in-out;
+    animation: SHOW-BOX 2s ease;
+}  
 
 .card_block {
     width: 350px;
     height: 350px;
     margin: 20px 10px;
     transition: 0.3s;
+
     &:hover {
         transform: scale(1.03);
     }
