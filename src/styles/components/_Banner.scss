@@ -3,10 +3,10 @@
     height: 200px;
     margin: 30px 60px;
     @include flexCenter;
-    -webkit-animation: SHOW-BOX 2s ease;
-    -moz-animation: SHOW-BOX 2s ease;
-    -o-animation: SHOW-BOX 2s ease;
-    animation: slide-in-elliptic-left-fwd 2s ease;
+    -webkit-animation: SHOW-BOX 2s ease-in-out;
+    -moz-animation: SHOW-BOX 2s ease-in-out;
+    -o-animation: SHOW-BOX 2s ease-in-out;
+    animation: SHOW-BOX 2s ease;
     &::before {
         content:"";
         position: absolute;
@@ -57,6 +57,7 @@
 
 // -------------------  Responsive ----------------------
 
+// Breakpoint 1280px
 @media (max-width: 1280px) {
     .banner_container {
         height: 180px;
