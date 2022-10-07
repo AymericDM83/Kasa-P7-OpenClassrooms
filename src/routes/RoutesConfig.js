@@ -8,7 +8,7 @@ import Error404 from "../pages/Error404";
 const RoutesConfig = () => {
   return (
     <Routes>
-      <Route path="/Kasa-P7-OpenClassrooms/home" element={<Home />} />
+      <Route path="/Kasa-P7-OpenClassrooms/" element={<Home />} />
       <Route path="/Kasa-P7-OpenClassrooms/lodging/:id" element={<Lodging />} />
       <Route path="/Kasa-P7-OpenClassrooms/about" element={<About />} />
       {/* path = "*" is for all other url adresses that non exist */}

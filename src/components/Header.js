@@ -13,7 +13,7 @@ const Header = () => {
           <nav>
             <ul>
               <NavLink
-                to="/Kasa-P7-OpenClassrooms/home"
+                to="/Kasa-P7-OpenClassrooms/"
                 // If the link is active, className = nav-active, otherwise className is empty
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 end
