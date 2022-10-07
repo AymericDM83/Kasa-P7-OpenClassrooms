@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 const Banner = () => {
   // Location storage to differentiate components className depending on the page location
   const path = useLocation().pathname;
-  const location = path.split("/")[1];
+  const location = path.split("/")[2];
 
   return (
     // Differentiate components className depending on the page location

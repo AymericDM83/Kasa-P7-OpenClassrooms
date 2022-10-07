@@ -19,7 +19,10 @@ const Home = () => {
           <div className="card_container">
             {/* Creation of a card + NavLink for each data index*/}
             {data.map((lodging, index) => (
-              <NavLink key={index} to={`/lodging/${lodging.id}`}>
+              <NavLink
+                key={index}
+                to={`/Kasa-P7-OpenClassrooms/lodging/${lodging.id}`}
+              >
                 <Card key={index} lodging={lodging} />
               </NavLink>
             ))}
