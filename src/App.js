@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get("../logements.json")
+        .get("logements.json")
         .then((res) => {
           setData(res.data);
         })
