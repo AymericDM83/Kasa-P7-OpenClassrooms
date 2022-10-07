@@ -1,4 +1,4 @@
-.banner_containerundefined {
+.banner_containerhome {
     position: relative;
     height: 180px;
     margin: 30px 60px;
@@ -59,7 +59,7 @@
 
 // --- Breakpoint 992px ---
 @media (max-width: 992px) {
-    .banner_containerundefined {
+    .banner_containerhome {
         height: 165px;
         margin: 30px;
         &::before {
@@ -80,7 +80,7 @@
 
 // --- Breakpoint 768px ---
 @media (max-width: 768px) {
-    .banner_containerundefined {
+    .banner_containerhome {
         height: 150px;
         margin: 20px;
         &::before {
@@ -101,7 +101,7 @@
 
 // --- Breakpoint 576px ---
 @media (max-width: 576px) {
-    .banner_containerundefined {
+    .banner_containerhome {
         height: 110px;
         margin: 15px;
         display: flex;

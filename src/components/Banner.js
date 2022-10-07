@@ -5,6 +5,7 @@ const Banner = () => {
   // Location storage to differentiate components className depending on the page location
   const path = useLocation().pathname;
   const location = path.split("/")[2];
+  console.log(location);
 
   return (
     // Differentiate components className depending on the page location
