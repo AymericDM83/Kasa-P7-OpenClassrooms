@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { AppContext } from "./AppContext";
 import axios from "axios";
-import Home from "./pages/Home";
-import Lodging from "./pages/Lodging";
-import About from "./pages/About";
-import Error404 from "./pages/Error404";
+import RoutesConfig from "./routes/RoutesConfig";
 
 const App = () => {
   const [data, setData] = useState([]);
 
+  // Catch and store datas
   useEffect(() => {
     const fetchData = async () => {
       await axios
@@ -25,14 +23,9 @@ const App = () => {
   return (
     // Router configuration
     <BrowserRouter>
+      {/* Sharing datas with other components and pages using useContext*/}
       <AppContext.Provider value={data}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/lodging/:id" element={<Lodging />} />
-          <Route path="/about" element={<About />} />
-          {/* path = "*" is for all other url adresses that non exist */}
-          <Route path="*" element={<Error404 />} />
-        </Routes>
+        <RoutesConfig />
       </AppContext.Provider>
     </BrowserRouter>
   );

@@ -7,6 +7,7 @@ import { AppContext } from "../AppContext";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  // Context import (datas)
   const data = useContext(AppContext);
 
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <Banner />
         <section>
           <div className="card_container">
+            {/* Creation of a card + NavLink for each data index*/}
             {data.map((lodging, index) => (
               <NavLink key={index} to={`/lodging/${lodging.id}`}>
                 <Card key={index} lodging={lodging} />
