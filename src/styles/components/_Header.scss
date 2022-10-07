@@ -76,11 +76,6 @@
 @media (max-width: 576px) {
     .nav_container {
         margin: 15px;
-        .logo {
-            img {
-                width: 110px;
-            }
-        }
         .links {
             ul {
                 & > * {

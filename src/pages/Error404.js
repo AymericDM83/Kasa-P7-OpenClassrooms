@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Error404 = () => {
@@ -19,6 +20,7 @@ const Error404 = () => {
           </div>
         </NavLink>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -3,16 +3,15 @@
     color: $color-salmon;
     display: flex;
     justify-content: space-between;
-
     &_infos {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 8px 0;
-        -webkit-animation: SHOW-BOX 1.5s ease;
-        -moz-animation: SHOW-BOX 1.5s ease;
-        -o-animation: SHOW-BOX 1.5s ease;
-        animation: slide-in-elliptic-left-fwd 1.5s ease;
+        -webkit-animation: slide-in-elliptic-top-fwd 1.5s ease-in-out;
+        -moz-animation: slide-in-elliptic-top-fwd 1.5s ease-in-out;
+        -o-animation: slide-in-elliptic-top-fwd 1.5s ease-in-out;
+        animation: slide-in-elliptic-top-fwd 1.5s ease-in-out;
         &_item.title-location{
             display: flex;
             flex-direction: column;

@@ -1,6 +1,6 @@
 .banner_container {
     position: relative;
-    height: 200px;
+    height: 180px;
     margin: 30px 60px;
     @include flexCenter;
     -webkit-animation: SHOW-BOX 2s ease-in-out;
@@ -31,7 +31,7 @@
 .banner_containerabout {
     position: relative;
     height: 200px;
-    margin: 30px 60px;
+    margin: 30px 60px 20px;
     @include flexCenter;
     -webkit-animation: SHOW-BOX 2s ease;
     -moz-animation: SHOW-BOX 2s ease;
@@ -57,17 +57,10 @@
 
 // -------------------  Responsive ----------------------
 
-// Breakpoint 1280px
-@media (max-width: 1280px) {
-    .banner_container {
-        height: 180px;
-    }
-}
-
 // --- Breakpoint 992px ---
 @media (max-width: 992px) {
     .banner_container {
-        height: 180px;
+        height: 165px;
         margin: 30px;
         &::before {
             border-radius: 22px;

@@ -5,10 +5,10 @@
     border-radius: 20px;
     padding: 3px 25px;
     margin: 10px 10px 0 0;
-    -webkit-animation: SHOW-BOX 2.5s ease;
-        -moz-animation: SHOW-BOX 2.5s ease;
-        -o-animation: SHOW-BOX 2.5s ease;
-        animation: slide-in-elliptic-left-fwd 2.5s ease;
+    -webkit-animation: slide-in-elliptic-left-fwd 2.5s ease;
+    -moz-animation: slide-in-elliptic-left-fwd 2.5s ease;
+    -o-animation: slide-in-elliptic-left-fwd 2.5s ease;
+    animation: slide-in-elliptic-left-fwd 2.5s ease;
 }
 
 // -------------------  Responsive ----------------------

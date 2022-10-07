@@ -4,30 +4,32 @@ import logo from "../img/logo.png";
 
 const Header = () => {
   return (
-    <div className="nav_container">
-      <div className="logo">
-        <img src={logo} alt="logo" />
+    <header>
+      <div className="nav_container">
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="links">
+          <nav>
+            <ul>
+              <NavLink
+                to="/"
+                className={(nav) => (nav.isActive ? "nav-active" : "")}
+                end
+              >
+                <li>Accueil</li>
+              </NavLink>
+              <NavLink
+                to="/about/"
+                className={(nav) => (nav.isActive ? "nav-active" : "")}
+              >
+                <li>A Propos</li>
+              </NavLink>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div className="links">
-        <nav>
-          <ul>
-            <NavLink
-              to="/"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-              end
-            >
-              <li>Accueil</li>
-            </NavLink>
-            <NavLink
-              to="/about/"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              <li>A Propos</li>
-            </NavLink>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    </header>
   );
 };
 
