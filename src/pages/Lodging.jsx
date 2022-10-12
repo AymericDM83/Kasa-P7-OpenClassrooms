@@ -39,6 +39,8 @@ const Lodging = () => {
       let found = data.find((o) => o.id === urlId);
       // Push these in lodgingData
       await setLodgingData(found);
+      // Go to top of page when re-render
+      window.scrollTo(0, 0);
     };
     pushLodgingData();
   });
