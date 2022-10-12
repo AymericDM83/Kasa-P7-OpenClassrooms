@@ -12,17 +12,14 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
-      <main>
+      <main className="main_content">
+        <Header />
         <Banner />
         <section>
           <div className="card_container">
             {/* Creation of a card + NavLink for each data index*/}
             {data.map((lodging, index) => (
-              <NavLink
-                key={index}
-                to={`/lodging/${lodging.id}`}
-              >
+              <NavLink key={index} to={`/lodging/${lodging.id}`}>
                 <Card key={index} lodging={lodging} />
               </NavLink>
             ))}

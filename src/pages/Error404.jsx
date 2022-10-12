@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const Error404 = () => {
   return (
-    <div className="footer_page">
+    <div className="error_page">
       <Header />
       <div className="error_block">
         <div className="error_container">

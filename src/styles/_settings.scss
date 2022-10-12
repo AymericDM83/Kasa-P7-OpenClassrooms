@@ -109,8 +109,11 @@ $color-black: #000000;
 body {
     background: $color-white;
     font-family: $Montserrat;
-    max-width: 1440px;
-    margin: 0 auto;
+}
+
+.main_content {
+        max-width: 1440px;
+        margin: 0 auto;
 }
 
 li {
