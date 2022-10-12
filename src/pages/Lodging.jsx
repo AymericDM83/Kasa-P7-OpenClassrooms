@@ -15,7 +15,8 @@ const Lodging = () => {
   const data = useContext(AppContext);
   // Location storage to differentiate components className depending on the page location
   const path = useLocation().pathname;
-  const location = path.split("/")[2];
+  const location = path.split("/")[1];
+  console.log(location);
   // URL storage
   const urlId = useParams().id;
   // Basic state of specific datas

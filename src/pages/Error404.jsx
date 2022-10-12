@@ -14,7 +14,7 @@ const Error404 = () => {
             Oups ! La page que vous demandez n'existe pas.
           </p>
         </div>
-        <NavLink to="/Kasa-P7-OpenClassrooms/home">
+        <NavLink to="/">
           <div className="error_link">
             <p>Retournez sur la page d'accueil</p>
           </div>

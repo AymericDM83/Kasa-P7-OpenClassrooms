@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { AppContext } from "./AppContext";
 import RoutesConfig from "./routes/RoutesConfig";
 import dataJson from "./data/logements.json";
@@ -17,12 +17,12 @@ const App = () => {
 
   return (
     // Router configuration
-    <BrowserRouter>
+    <HashRouter>
       {/* Sharing datas with other components and pages using useContext*/}
       <AppContext.Provider value={data}>
         <RoutesConfig />
       </AppContext.Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
