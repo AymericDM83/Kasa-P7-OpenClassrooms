@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { AppContext } from "../AppContext";
 import Header from "../components/Header";
 import Slideshow from "../components/Slideshow";
