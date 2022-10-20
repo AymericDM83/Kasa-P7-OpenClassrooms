@@ -9,7 +9,7 @@ const About = () => {
     <div>
       <div className="main_content">
         <Header />
-        <Banner />
+        <Banner location="-about" />
         <section>
           <div className="collapse_box">
             <Collapse

@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <main className="main_content">
         <Header />
-        <Banner />
+        <Banner location="-home" />
         <section>
           <div className="card_container">
             {/* Creation of a card + NavLink for each data index*/}

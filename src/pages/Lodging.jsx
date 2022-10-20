@@ -13,9 +13,6 @@ import Footer from "../components/Footer";
 const Lodging = () => {
   // Context import (datas)
   const data = useContext(AppContext);
-  // Location storage to differentiate components className depending on the page location
-  const path = useLocation().pathname;
-  const location = path.split("/")[1];
   // URL storage
   const urlId = useParams().id;
   // Basic state of specific datas
@@ -144,7 +141,7 @@ const Lodging = () => {
                 </div>
               </div>
               {/* Differentiate components className depending on the page location */}
-              <div className={"collapse_box" + location}>
+              <div className="collapse_box-lodging">
                 <Collapse
                   label="Description"
                   content={lodgingData.description}
